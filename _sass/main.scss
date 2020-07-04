@@ -31,6 +31,7 @@ h3 {
 /* end globals */
 
 /* nav navbar menu */
+
 .navbar ul, li{
     display:inline;
 }
@@ -43,12 +44,32 @@ h3 {
 }
 /* end nav navbar menu */
 
-/* post year individual */
+/* post year individual
 .post-heading, .post-content {
   display:block;
   padding-left:1rem;
+  padding-inline-start:1rem;
+}*/
+
+div.post-heading li, p, h3{
+  padding-inline-start:40px;
+  display: inline-block;
+  margin-bottom:0;
 }
 
+.post-content p, h3{
+  padding-inline-start:40px;
+  //margin-top:0;
+}
+
+.post-content li {
+  display:block;
+}
+/*
+.post-content ul {
+  margin:0;
+}
+*/
 .post-footer {
   display:block;
 }
@@ -56,15 +77,31 @@ h3 {
 
 /* about page */
 .site-info ul {
-  width:100%;
+  //width:100%;
   text-align:center;
   position:fixed;
   bottom:0;
-  margin:0px;
+  left: 0;
+  right: 0;
+  padding-inline-start:0;
+  margin-bottom:4rem;
 }
 .site-info li{
-  font-size:75%;
+
+  font-size:80%;
   display: inline;
   padding:0.25rem;
 }
 /* end about page */
+
+/* breadcrumbs */
+#breadcrumbs {
+  font-size:80%;
+  width:100%;
+  text-align:center;
+  position:fixed;
+  bottom:0;
+  left: 0;
+  right: 0;
+  margin-bottom:1rem;
+}

@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- my styles -->
   <link rel="stylesheet" href="/assets/css/styles.css">
-
+  {% feed_meta %}
+  {% seo %}
 </head>
   <body>
     {% include navigation.html %}
     {% include nav-years.html %}
     {{ content }}
+    {% include breadcrumbs.html %}
   </body>
 </html>

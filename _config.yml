@@ -21,3 +21,10 @@ defaults:
 
 # variables
 title: "S1 Archive"
+
+#plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate

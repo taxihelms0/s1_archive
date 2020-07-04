@@ -3,11 +3,9 @@ layout: default
 ---
 
   <div class="post-heading">
-
-    <!--<h3>{% if page.short_name %}{{ page.short_name }}{% else %}{{ page.title }}{% endif %}</h3>-->
     {{ content }}
   </div>
-  <div class="post-content"
+  <div class="post-content">
     <ul>
       {% assign filtered_posts = site.posts | where: 'date', page.short_name %}
       {% for post in filtered_posts %}

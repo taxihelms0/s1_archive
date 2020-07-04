@@ -2,23 +2,9 @@
 layout: default
 ---
 
-  <div class="post-heading">
-    <h3>{{ page.title }}</h3>
-    <p>
-      {{ page.date | date_to_string }} - {{ page.author }}
-      {% assign year = site.years | where: 'short_name', page.date | first %}
-      {% if year %}
-        - <a href="{{ author.url }}">{{ year.short_name }}</a>
-      {% endif %}
-    </p>
+  <div class="post-heading padded-top">
+      <h3>{{ page.title }}</h3> - {{ page.date | date_to_string }}
 </div>
   <div class="post-content">
-  {% if page.media_file %}
-  <audio controls>
-    <source src="{{ page.media_file }}" type="audio/mpeg">
-  Your browser does not support the audio element.
-  </audio>
-  {% endif %}
-
-  {{ content }}
+    {{ content }}
   </div>
