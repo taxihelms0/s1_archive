@@ -12,8 +12,11 @@ layout: default
     {% assign filtered_posts = site.posts | where: 'date', page.short_name %}
     {% for post in filtered_posts %}
       <li><span>
-          <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date_to_string }}</a>
+        <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date_to_string }}</a>
       </span></li>
+    {% else %}
+      <li>nothing here</li>
+      <li>Looks like {{ page.short_name }} is empty.</li>
     {% endfor %}
   </ul>
 </div>
