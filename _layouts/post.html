@@ -1,22 +1,24 @@
 ---
 layout: default
 ---
-<div class="pure-u-1">
-<h1>{{ page.title }}</h1>
-<p>
-  {{ page.date | date_to_string }} - {{ page.author }}
-  {% assign year = site.years | where: 'short_name', page.date | first %}
-  {% if year %}
-    - <a href="{{ author.url }}">{{ year.short_name }}</a>
-  {% endif %}
-</p>
 
-{% if page.media_file %}
-<audio controls>
-  <source src="{{ page.media_file }}" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-{% endif %}
-
-{{ content }}
+  <div class="post-heading">
+    <h3>{{ page.title }}</h3>
+    <p>
+      {{ page.date | date_to_string }} - {{ page.author }}
+      {% assign year = site.years | where: 'short_name', page.date | first %}
+      {% if year %}
+        - <a href="{{ author.url }}">{{ year.short_name }}</a>
+      {% endif %}
+    </p>
 </div>
+  <div class="post-content">
+  {% if page.media_file %}
+  <audio controls>
+    <source src="{{ page.media_file }}" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+  {% endif %}
+
+  {{ content }}
+  </div>

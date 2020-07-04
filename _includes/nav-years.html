@@ -1,0 +1,9 @@
+<nav class="navbar">
+  <ul>
+    {% for item in site.years %}
+    <li>
+      <a href="{{ item.url }}" {% if page.url contains item.short_name %}class="current"{% endif %}>{{ item.short_name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

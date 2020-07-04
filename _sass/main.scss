@@ -14,6 +14,7 @@ body {
 
 ul {
   list-style-type:none;
+
 }
 
 a {
@@ -30,15 +31,22 @@ h3 {
 /* end globals */
 
 /* nav navbar menu */
-.navbar ul li{
-    display:inline-block;
+.navbar ul, li{
+    display:inline;
+}
+.navbar ul {
+  padding-inline-start:1rem;
+}
+
+.current {
+  background-color:magenta;
 }
 /* end nav navbar menu */
 
 /* post year individual */
-.post-heading {
+.post-heading, .post-content {
   display:block;
-  padding-left:40px;
+  padding-left:1rem;
 }
 
 .post-footer {
