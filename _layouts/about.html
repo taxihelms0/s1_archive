@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="pure-u-1">
+  <div class="post-heading">
+
+    <h3>{% if page.short_name %}{{ page.short_name }}{% else %}{{ page.title }}{% endif %}</h3>
+    {{ content }}
+  </div>
+  <div class="post-footer site-info">
+    <ul>
+      <li>website info:</li>
+      <li>{% assign time = site.time | date: "%b %d, %Y %H:%M" %}
+      updated {{ time }}</li>
+      <li>built by <a href="http://alexiansmith.com" target="blank">alex ian smith</a></li>
+      <li><a href="https://github.com/taxihelms0" target="blank">source</a></li>
+    </ul>
+
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<!--<div class="header">
+  <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+    <a class="pure-menu-heading" href="">Your Site</a>
+
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sign Up</a></li>
+    </ul>
+  </div>
+</div>-->
+
+<div class="pure-u-1">
+  <nav class="navbar">
+    <ul>
+      <li><a href="/">{{ site.title }}</a></li>
+    {% for item in site.data.navigation %}
+      <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}{%if item.link contains "://" %}target="new"{% endif %}>
+        {{ item.name }}
+      </a></li>
+    {% endfor %}
+    </ul>
+  </nav>
+<div>
+
+<!--<div class="custom-wrapper pure-g" id="menu">
+  <div class="pure-u-1 pure-u-md-1-3">
+    <div class="pure-menu">
+      <a href="/" class="pure-menu-heading custom-brand">{{ site.title }}</a>
+      <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+    </div>
+  </div>
+  <div class="pure-u-1 pure-u-md-1-3">
+    <div class="pure-menu pure-menu-horizontal custom-can-transform">
+      <ul class="pure-menu-list">
+        {% for item in site.data.navigation %}
+          <li class="pure-menu-item {% if page.url == item.link %}class="pure-menu-selected{% endif %} {% if item.children %}"pure-menu-has-children"{% endif %}"">
+            <a href="{{ item.link }}" {%if item.link contains "://" %}target="blank"{% endif %} class="pure-menu-link">
+              {{ item.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>-->

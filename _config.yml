@@ -1,0 +1,23 @@
+collections:
+  years:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "years"
+    values:
+      layout: "year"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      children: years
+
+# variables
+title: "S1 Archive (2014-2019)"

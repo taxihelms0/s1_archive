@@ -1,0 +1,7 @@
+- name: The Archive
+  link: /
+  children: years
+- name: About
+  link: /about.html
+- name: s1portland.com
+  link: "https://s1portland.com"
