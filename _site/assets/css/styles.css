@@ -31,6 +31,8 @@ div.post-heading li, p, h3 { padding-inline-start: 40px; display: inline-block; 
 /* .post-content ul { margin:0; } */
 .post-footer { display: block; }
 
+.post-footer .page-navigation { position: fixed; bottom: 0; left: 0; right: 0; margin-bottom: 5rem; }
+
 /* end post year individual */
 /* about page */
 .site-info ul { text-align: center; position: fixed; bottom: 0; left: 0; right: 0; padding-inline-start: 0; margin-bottom: 4rem; }

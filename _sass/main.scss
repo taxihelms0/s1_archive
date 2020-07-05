@@ -73,6 +73,14 @@ div.post-heading li, p, h3{
 .post-footer {
   display:block;
 }
+
+.post-footer .page-navigation {
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  margin-bottom:5rem;
+}
 /* end post year individual */
 
 /* about page */
