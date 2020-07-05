@@ -1,6 +1,6 @@
-# S1 Archive documentation Site
+# S1 Archive documentation Site # 2014 - 2019
 
-# 2014 - 2019
+
 
 <p>This site attempts to serve as a semi-comprehensive archive of the numerous events and ephemera from this time-period. Some things are incomplete. Other things never got documented in the first place.</p>
 
