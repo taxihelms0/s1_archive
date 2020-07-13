@@ -1,4 +1,4 @@
 ---
-title: 'Blowout, Our First Brain'
-date: '06-08-2014 00:00'
+title: Blowout, Our First Brain
+date: 2014-08-06
 ---
