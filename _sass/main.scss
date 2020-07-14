@@ -32,6 +32,16 @@ h3 {
 
 /* nav navbar menu */
 
+.menu {
+  position:fixed;
+  top:0;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  padding-right:0.5rem;
+  background-color:white;
+  width:100%;
+}
+
 .navbar ul, li{
     display:inline;
 }
@@ -44,12 +54,12 @@ h3 {
 }
 /* end nav navbar menu */
 
-/* post year individual
-.post-heading, .post-content {
+/* post year individual */
+.post-content {
   display:block;
-  padding-left:1rem;
-  padding-inline-start:1rem;
-}*/
+  margin-top:3.5rem;
+  margin-bottom:1.8rem;
+}
 
 div.post-heading li, p, h3{
   padding-inline-start:40px;
@@ -71,15 +81,30 @@ div.post-heading li, p, h3{
 }
 */
 .post-footer {
+  background-color:white;
   display:block;
-}
-
-.post-footer .page-navigation {
   position: fixed;
-  bottom:0;
   left:0;
   right:0;
-  margin-bottom:5rem;
+  margin-left:auto;
+  margin-right:auto;
+  width:80%;  
+  bottom:0;
+  margin-bottom:1rem;
+}
+
+.page-navigation {
+  width:100%;
+  display:inline-block;
+}
+.page-navigation a.prev {
+  // display:inline-block;
+  float:left;
+}
+
+.page-navigation a.next {
+  // display:inline-block;
+  float:right;
 }
 /* end post year individual */
 
@@ -95,7 +120,6 @@ div.post-heading li, p, h3{
   margin-bottom:4rem;
 }
 .site-info li{
-
   font-size:80%;
   display: inline;
   padding:0.25rem;
@@ -107,9 +131,10 @@ div.post-heading li, p, h3{
   font-size:80%;
   width:100%;
   text-align:center;
-  position:fixed;
-  bottom:0;
-  left: 0;
-  right: 0;
-  margin-bottom:1rem;
+  // position:fixed;
+  // bottom:0;
+  // left: 0;
+  // right: 0;
+  // padding-bottom:1rem;
+  background-color:white;
 }

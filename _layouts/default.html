@@ -4,15 +4,18 @@
   <meta charset="utf-8">
   <title>{{ site.title }}{% if page.url != "/" %}:{{ page.title }}{% endif %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- font library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- my styles -->
   <link rel="stylesheet" href="/assets/css/styles.css">
   {% feed_meta %}
   {% seo %}
 </head>
   <body>
-    {% include navigation.html %}
+    <div class="menu">
+      {% include navigation.html %}
     {% include nav-years.html %}
+    </div>
     {{ content }}
-    {% include breadcrumbs.html %}
   </body>
 </html>

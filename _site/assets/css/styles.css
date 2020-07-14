@@ -14,6 +14,8 @@ h3 { font-weight: normal; }
 
 /* end globals */
 /* nav navbar menu */
+.menu { position: fixed; top: 0; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-right: 0.5rem; background-color: white; width: 100%; }
+
 .navbar ul, li { display: inline; }
 
 .navbar ul { padding-inline-start: 1rem; }
@@ -21,7 +23,9 @@ h3 { font-weight: normal; }
 .current { background-color: magenta; }
 
 /* end nav navbar menu */
-/* post year individual .post-heading, .post-content { display:block; padding-left:1rem; padding-inline-start:1rem; }*/
+/* post year individual */
+.post-content { display: block; margin-top: 3.5rem; margin-bottom: 1.8rem; }
+
 div.post-heading li, p, h3 { padding-inline-start: 40px; display: inline-block; margin-bottom: 0; }
 
 .post-content p, h3 { padding-inline-start: 40px; }
@@ -29,9 +33,13 @@ div.post-heading li, p, h3 { padding-inline-start: 40px; display: inline-block; 
 .post-content li { display: block; }
 
 /* .post-content ul { margin:0; } */
-.post-footer { display: block; }
+.post-footer { background-color: white; display: block; position: fixed; left: 0; right: 0; margin-left: auto; margin-right: auto; width: 80%; bottom: 0; margin-bottom: 1rem; }
 
-.post-footer .page-navigation { position: fixed; bottom: 0; left: 0; right: 0; margin-bottom: 5rem; }
+.page-navigation { width: 100%; display: inline-block; }
+
+.page-navigation a.prev { float: left; }
+
+.page-navigation a.next { float: right; }
 
 /* end post year individual */
 /* about page */
@@ -41,6 +49,8 @@ div.post-heading li, p, h3 { padding-inline-start: 40px; display: inline-block; 
 
 /* end about page */
 /* breadcrumbs */
-#breadcrumbs { font-size: 80%; width: 100%; text-align: center; position: fixed; bottom: 0; left: 0; right: 0; margin-bottom: 1rem; }
+#breadcrumbs { font-size: 80%; width: 100%; text-align: center; background-color: white; }
+
+@media screen and (max-width: 600px) { .post-content ul, .navbar ul { padding-inline-start: 0.5rem; } }
 
 /*# sourceMappingURL=styles.css.map */
