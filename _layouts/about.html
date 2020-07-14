@@ -1,18 +1,18 @@
 ---
 layout: default
 ---
-  <div class="post-heading">
-
-    <h3>{% if page.short_name %}{{ page.short_name }}{% else %}{{ page.title }}{% endif %}</h3>
+  
+  <div class="post-content">
     {{ content }}
   </div>
   <div class="post-footer site-info">
     <ul>
-      <li>website info:</li>
-      <li>{% assign time = site.time | date: "%b %d, %Y %H:%M" %}
+      <li>site info:</li>
+      <li class="">{% assign time = site.time | date: "%b %d, %Y %H:%M" %}
       updated {{ time }}</li>
-      <li>built by <a href="http://alexiansmith.com" target="blank">alex ian smith</a></li>
-      <li><a href="https://github.com/taxihelms0/s1_archive" target="blank">view source</a></li>
     </ul>
-
+    <ul>
+      <li class="">built by <a href="https://alexiansmith.com">Alex Ian Smith</a></li>
+      <li class=""><a href="https://github.com/taxihelms0/alexiansmith.com" target="blank"><i class="fa fa-github"></i> view source</a></li>
+    </ul>
   </div>

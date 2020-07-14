@@ -1,12 +1,18 @@
 <div id="breadcrumbs">
 {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
 <a href="/">{{ site.title }}</a>
-{% for crumb in crumbs offset: 1 %}
+<!-- alex's version for s1 archive -->
+/
+<a href="/years/{{ page.date | date: "%Y" }}.html">{{ page.date | date: "%Y" }}</a>
+/
+{{ page.title }}
+<!-- original code below -->
+<!-- {% for crumb in crumbs offset: 1 %}
   {% assign num = crumb | plus: 0 %}
   {% if forloop.last %}
     / {{ page.title }}
   {% else %}
     {% if num > 2000 %}/ <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>{% endif %}
   {% endif %}
-{% endfor %}
+{% endfor %} -->
 </div>

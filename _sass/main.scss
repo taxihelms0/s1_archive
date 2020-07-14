@@ -1,20 +1,20 @@
 /* globals */
-*{
-  font-family:sans-serif;
-}
+// *{
+//   font-family:serif;
+// }
 /* vars */
 $dark-grey: #222;
 $light-grey: #AAA;
 $very-light-grey: #EEE;
 
 body {
+  font-size: 1.3em;
   color:$dark-grey;
   font-weight:lighter;
 }
 
 ul {
   list-style-type:none;
-
 }
 
 a {
@@ -27,10 +27,27 @@ a:hover {
 
 h3 {
   font-weight:normal;
+  margin-top:0;
+}
+
+p {
+  margin-top:0;
+}
+
+.inline {
+  display:inline;
+}
+
+.inline-block {
+  display: inline-block;
 }
 /* end globals */
 
 /* nav navbar menu */
+
+.navbar ul  {
+  padding-inline-start:0.5rem;
+}
 
 .menu {
   position:fixed;
@@ -46,7 +63,7 @@ h3 {
     display:inline;
 }
 .navbar ul {
-  padding-inline-start:1rem;
+  padding-inline-start:0.5rem;
 }
 
 .current {
@@ -57,29 +74,36 @@ h3 {
 /* post year individual */
 .post-content {
   display:block;
-  margin-top:3.5rem;
+  margin-top:5rem;
   margin-bottom:1.8rem;
+}
+
+.post-heading {
+  padding-left:0.5rem;
+  margin-top:0;
 }
 
 div.post-heading li, p, h3{
   padding-inline-start:40px;
   display: inline-block;
+  padding-left:0;
   margin-bottom:0;
 }
 
-.post-content p, h3{
-  padding-inline-start:40px;
-  //margin-top:0;
+.post-content > p {
+  padding-inline-start:0rem;
+  padding-left:0.5rem;
+  margin-top:0;
 }
 
 .post-content li {
   display:block;
 }
-/*
+
 .post-content ul {
-  margin:0;
+    padding-inline-start:0.5rem;
 }
-*/
+
 .post-footer {
   background-color:white;
   display:block;
@@ -96,28 +120,40 @@ div.post-heading li, p, h3{
 .page-navigation {
   width:100%;
   display:inline-block;
+  font-size: 0.75em;
+  padding-bottom:0.25rem;
 }
 .page-navigation a.prev {
   // display:inline-block;
   float:left;
+  width:50%;
 }
 
 .page-navigation a.next {
   // display:inline-block;
+  width:50%;
+  text-align:right;
   float:right;
 }
 /* end post year individual */
 
 /* about page */
-.site-info ul {
-  //width:100%;
-  text-align:center;
+.site-info {
   position:fixed;
   bottom:0;
   left: 0;
   right: 0;
+}
+.site-info ul {
+  //width:100%;
+  text-align:center;
+  margin-block-end:0;
+  margin-block-start:0;
+  display:block;
+  margin-top:0;
+  
   padding-inline-start:0;
-  margin-bottom:4rem;
+  // margin-bottom:4rem;
 }
 .site-info li{
   font-size:80%;
@@ -128,7 +164,7 @@ div.post-heading li, p, h3{
 
 /* breadcrumbs */
 #breadcrumbs {
-  font-size:80%;
+  font-size:0.75em;
   width:100%;
   text-align:center;
   // position:fixed;
