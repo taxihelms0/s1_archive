@@ -123,13 +123,14 @@ div.post-heading li, p, h3{
   font-size: 0.75em;
   padding-bottom:0.25rem;
 }
-.page-navigation a.prev {
+.page-navigation .leftNav {
   // display:inline-block;
   float:left;
   width:50%;
 }
 
-.page-navigation a.next {
+
+.page-navigation .rightNav {
   // display:inline-block;
   width:50%;
   text-align:right;
