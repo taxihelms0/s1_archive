@@ -1,6 +1,6 @@
 /* globals */
 /* vars */
-body { font-size: 1.3em; color: #222; font-weight: lighter; }
+body { letter-spacing: 0.025em; font-size: 1.3em; color: #EEE; font-weight: lighter; background-color: black; }
 
 ul { list-style-type: none; }
 
@@ -20,7 +20,7 @@ p { margin-top: 0; }
 /* nav navbar menu */
 .navbar ul { padding-inline-start: 0.5rem; }
 
-.menu { position: fixed; top: 0; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-right: 0.5rem; background-color: white; width: 100%; }
+.menu { position: fixed; top: 0; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-right: 0.5rem; background-color: black; color: #EEE; width: 100%; }
 
 .navbar ul, li { display: inline; }
 
@@ -42,7 +42,7 @@ div.post-heading li, p, h3 { padding-inline-start: 40px; display: inline-block; 
 
 .post-content ul { padding-inline-start: 0.5rem; }
 
-.post-footer { background-color: white; display: block; position: fixed; left: 0; right: 0; margin-left: auto; margin-right: auto; width: 80%; bottom: 0; margin-bottom: 1rem; }
+.post-footer { background-color: black; display: block; position: fixed; left: 0; right: 0; margin-left: auto; margin-right: auto; width: 80%; bottom: 0; margin-bottom: 1rem; }
 
 .page-navigation { width: 100%; display: inline-block; font-size: 0.75em; padding-bottom: 0.25rem; }
 
@@ -60,7 +60,7 @@ div.post-heading li, p, h3 { padding-inline-start: 40px; display: inline-block; 
 
 /* end about page */
 /* breadcrumbs */
-#breadcrumbs { font-size: 0.75em; width: 100%; text-align: center; background-color: white; }
+#breadcrumbs { font-size: 0.75em; width: 100%; text-align: center; background-color: black; }
 
 @media screen and (max-width: 600px) { .post-content ul, .navbar ul { padding-inline-start: 0.5rem; } .post-footer { padding-left: 1rem; padding-right: 1rem; width: auto; } }
 

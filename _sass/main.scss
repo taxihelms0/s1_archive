@@ -6,11 +6,15 @@
 $dark-grey: #222;
 $light-grey: #AAA;
 $very-light-grey: #EEE;
+$page-background: black;
+$text-color: #EEE;
 
 body {
+  letter-spacing:0.025em;
   font-size: 1.3em;
-  color:$dark-grey;
+  color:$text-color;
   font-weight:lighter;
+  background-color:$page-background;
 }
 
 ul {
@@ -55,7 +59,8 @@ p {
   padding-top:0.5rem;
   padding-bottom:0.5rem;
   padding-right:0.5rem;
-  background-color:white;
+  background-color:$page-background;
+  color:$text-color;
   width:100%;
 }
 
@@ -105,7 +110,7 @@ div.post-heading li, p, h3{
 }
 
 .post-footer {
-  background-color:white;
+  background-color:$page-background;
   display:block;
   position: fixed;
   left:0;
@@ -173,5 +178,5 @@ div.post-heading li, p, h3{
   // left: 0;
   // right: 0;
   // padding-bottom:1rem;
-  background-color:white;
+  background-color:$page-background;
 }
